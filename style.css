@@ -1,0 +1,172 @@
+header {
+
+}
+
+nav {
+  margin-bottom: 20px;
+  position: fixed;
+  background-color: gray;
+  text-align: center;
+  width: 50%;
+  left: 25%;
+  z-index: 1;
+}
+
+
+
+/*main {
+  /* The image used */
+   /*background-image: url("https://static.pexels.com/photos/25073/pexels-photo-25073.jpg (Not automatically expanded because 8MB is too large. You can expand it anyway or open it in a new window. You can also change your preferences to allow images of any file size to auto expand.) ");*/
+
+   /* Set a specific height */
+   /*min-height: 380px;*/
+
+   /* Create the parallax scrolling effect */
+   /*background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;*/
+/*}*/
+
+.bodyDivs {
+  width: 100%;
+}
+
+#intro {
+  height: 800px;
+}
+
+#aboutMe {
+  height: 500px;
+}
+
+#resume {
+  height: 750px;
+}
+
+#interests{
+  height: 500px;
+}
+
+#chart_div {
+  float: left;
+  margin-right: 50px;
+}
+
+li {
+  margin: 10px 0;
+}
+
+/*#contactWrapper img:not(last) {
+margin-left: 40px;
+  margin-right: 40px;
+}*/
+
+.img-with-text {
+
+    text-align: center;
+
+}
+
+/*.img-with-text img {
+    margin: 0 auto;
+}*/
+
+#doubleWrap {
+  margin: 0 auto;
+}
+
+#contactWrapper {
+  /*padding-top: 30px;*/
+  /*width: 70%;*/
+  /*margin: 0 auto;*/
+  /*display: inline-block;*/
+  /*white-space: nowrap;*/
+  /*display: inline-block;*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.imgFix {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+#contact {
+  height: 500px;
+}
+
+.contentWrapper {
+  margin-top: 30px;
+  padding-top: 50px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+#interestWrapper {
+  margin-top: 30px;
+  padding-top: 50px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+#resumeWrapper {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+#workWrapper {
+  width: 80%;
+  max-height: 800px;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: stretch;
+}
+
+.flexIMG {
+  margin-left: -300px;
+}
+
+#workWrapper img {
+  margin-bottom: 50px;
+}
+
+.leftColumn {
+  width: 35%;
+  float: left;
+}
+
+.rightColumn {
+  width: 65%;
+  float: left;
+}
+
+#aboutMe img {
+    /*padding-right: 40px;*/
+    margin-right: 20px;
+    float: left;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+#githubLogo {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+h1 {
+  border-bottom: 2px solid black;
+  padding-top: 30px;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  height: 50px;
+}

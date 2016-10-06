@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+      // Load the Visualization API and the corechart package.
+      google.charts.load('current', {'packages':['corechart']});
+
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.charts.setOnLoadCallback(drawChart);
+
+      // Callback that creates and populates a data table,
+      // instantiates the pie chart, passes in the data and
+      // draws it.
+      function drawChart() {
+
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+          ['Friends and Family', 35],
+          ['Gym', 25],
+          ['Golf', 20],
+          ['Wasting Time on YouTube', 10],
+          ['Thinking of Pie Charts', 7],
+          ['Wishing he Was at Cava', 3],
+        ]);
+
+        // Set chart options
+        var options = {'title':'How Rob Spends Time Outside of Computers',
+                       backgroundcolor: 'transparent',
+                       'width':400,
+                       'height':300};
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+
+
+  <title>Robert Zehnder</title>
+</head>
+<body>
+
+  <header>
+      <div class="navBar">
+      <nav>
+        <a class="smoothScroll" href="#intro">Intro</a>
+        <a class="smoothScroll" href="#aboutMe">About Me</a>
+        <a class="smoothScroll" href="#resume">Resume</a>
+        <a class="smoothScroll" href="#featuredWork">Featured Work</a>
+        <a class="smoothScroll" href="#intersts">Interests</a>
+        <a class="smoothScroll" href="#contact">Contact</a>
+      </nav>
+  </div>
+  </header>
+
+  <main class="parallax">
+<!--################ intro ################-->
+      <div id="intro" class="bodyDivs altDiv">
+        <h1 class="contentTitle">intro</h1>
+      </div>
+
+
+<!--################ aboutMe ################-->
+      <div id="aboutMe" class="bodyDivs">
+        <h1 class="contentTitle">aboutMe</h1>
+
+        <div class="contentWrapper">
+          <img src="robzPic.jpg" alt="Rob Z" />
+          <p>
+            I'm a full stack developer with a background in continuous improvement and business. I have multiple years of experience in process improvement and
+            technology in a Fortune 500 Financial Services environment. I seek to bring my well rounded tech experience to businesses of all sizes to deliver high value applications.
+          </p>
+        </div>
+      </div>
+
+<!--################ resume ################-->
+      <div id="resume" class="bodyDivs altDiv">
+        <h1 class="contentTitle">resume</h1>
+
+        <div id="resumeWrapper">
+          <h3>Experience</h3>
+            <div class="experience">
+
+              <!-- Resume 1 -->
+              <div>
+                <div class="leftColumn">
+                  <p>Web Development Student || General Assembly</p>
+                  <p>Oct 2016 - Year End 2016</p>
+                </div>
+                <div class="rightColumn">
+                  <p>A 12 Week course focusing on full stack web development. While attending the course, I will develop and deploy multiple web applications focusing primarily on Javascript (MEAN Stack). Applications will be built using APIs, OAuth, and the latest in development best practices.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Resume 2 -->
+              <div>
+                <div class="leftColumn">
+                  <p>Senior Scrum Master || Capital One</p>
+                  <p>July 2015 - September 2016</p>
+                </div>
+                <div class="rightColumn">
+                  <p>A scrum master for multiple teams (4 at one point) for the Big Data department on a project building a Cyber Security application for our Security Analysts using open source tools. Oversaw the agile teams from the project’s inception to its release into production. Lead teams on Agile best practices and helped them navigate the process challenges associated with building an application with Open Source tools brand new to Capital One.
+                  </p>
+
+                </div>
+              </div>
+
+              <!-- Resume 3 -->
+              <div>
+                <div class="leftColumn">
+                  <p>Risk and Process Management || Capital One</p>
+                  <p>July 2014 - July 2015</p>
+                </div>
+                <div class="rightColumn">
+                  <p>Worked on the Process Governance team to assist with implementing the lean process initiatives in Auto Finance. Also managed datasets and reports that contained the operational health of the organization, as well as the detailed descriptions of laws and policies applicable to each business process. Responsible for consolidating the department’s risk controls onto a singular document which allowed lawyers and business stakeholder to identify applicable legal requirements faster than ever before. Document was used in company wide conference key note speech.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+
+            <h3>Education</h3>
+            <div class="experience">
+
+              <!-- Resume 1 -->
+              <div>
+                <div class="leftColumn">
+                  <p>Web Development Student || General Assembly</p>
+                  <p>Oct 2016 - Year End 2016</p>
+                </div>
+                <div class="rightColumn">
+                  <p>A 12 Week course focusing on full stack web development. While attending the course, I will develop and deploy multiple web applications focusing primarily on Javascript (MEAN Stack). Applications will be built using APIs, OAuth, and the latest in development best practices.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Resume 2 -->
+              <div>
+                <div class="leftColumn">
+                  <p>James Madison University</p>
+                  <p>2009-2014</p>
+                </div>
+                <div class="rightColumn">
+                  <p>BBA: Computer Information Systems
+                  </p>
+
+                </div>
+              </div>
+
+          </div>
+        </div>
+      </div>
+
+<!--################ featuredWork ################-->
+      <div id="featuredWork" class="bodyDivs">
+        <h1 class="contentTitle">featuredWork</h1>
+        <div id="workWrapper">
+          <img src="robzPic.jpg">
+          <img src="robzPic.jpg">
+          <img class="flexIMG" src="robzPic.jpg">
+          <img class="flexIMG" src="robzPic.jpg">
+        </div>
+        <img id="githubLogo" src="GitHub-Logo.png">
+      </div>
+
+<!--################ intersts ################-->
+      <div id="interests" class="bodyDivs altDiv">
+        <h1 class="contentTitle">intersts</h1>
+        <div id="interestWrapper">
+          <div id="chart_div"></div>
+          <h3>Fun Facts</h3>
+          <ul>
+            <li>Almost 20 years of competitive golf experience (Qualified for 2016 Virginia Amateur and Virginia Open Championships)</li>
+            <li>Spent time as lead writer and head of marketing for a music blog which had articles with more than 10,000 unique views (FindNewJams.com) - Now Offline</li>
+            <li>Almost exclusively ate Grilled Cheese and Chicken Nuggets until high school. Now possesses an adventurous food palette.</li>
+          </ul>
+
+        </div>
+      </div>
+
+<!--################ contact ################-->
+      <div id="contact" class="bodyDivs">
+        <h1 class="contentTitle">contact</h1>
+        <div id="contactWrapper">
+          <img class="imgFix" src="mail.png">
+          <img class="imgFix" src="linkedin.png">
+           <div class="img-with-text">
+            <img src="pigeon.png">
+            <p>Coming Soon</p>
+          </div>
+      </div>
+      </div>
+
+  </main>
+
+  <footer>
+
+  </footer>
+
+</body>
+</html>
