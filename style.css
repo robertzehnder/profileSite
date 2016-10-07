@@ -1,17 +1,48 @@
-header {
+/*http://www.pascalvangemert.nl/#/profile*/
+
+body {
+  max-width: 800px;
+  margin: 0 auto;
 
 }
 
+.navBar {
+  left: 25%;
+  display: flex;
+}
+
 nav {
-  margin-bottom: 20px;
+  height: 40px;
+  margin: 0 auto;
+  vertical-align: middle;
+  font-size: 15px;
+  padding-top: 10px;
   position: fixed;
-  background-color: gray;
+  background-color: black;
   text-align: center;
   width: 50%;
   left: 25%;
   z-index: 1;
+
 }
 
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav li {
+    left: 25%;
+    display: table-cell;
+    height: 40px;
+    width: 20%;
+    margin: 0 auto;
+    line-height: 20px;
+    text-align: center;
+    /*background: #ddd;*/
+
+    background-color: black;
+}
 
 
 /*main {
@@ -29,7 +60,7 @@ nav {
 /*}*/
 
 .bodyDivs {
-  width: 100%;
+
 }
 
 #intro {
@@ -38,10 +69,15 @@ nav {
 
 #aboutMe {
   height: 500px;
+  padding-top: 50px;
 }
 
 #resume {
-  height: 750px;
+
+}
+
+#clearFix {
+  clear: both;
 }
 
 #interests{
@@ -101,15 +137,19 @@ margin-left: 40px;
 .contentWrapper {
   margin-top: 30px;
   padding-top: 50px;
-  width: 50%;
+  width: 80%;
   margin: 0 auto;
 }
 
 #interestWrapper {
   margin-top: 30px;
   padding-top: 50px;
-  width: 70%;
+  /*width: 70%;*/
   margin: 0 auto;
+}
+
+#factsWrapper {
+  display: inline;
 }
 
 #resumeWrapper {
@@ -123,6 +163,9 @@ margin-left: 40px;
   max-height: 800px;
   margin: 0 auto;
   margin-top: 30px;
+  /*column-count:2;*/
+  /*height: 600px;*/
+  /*width: 350px;*/
   display: flex;
   align-items: center;
   flex-flow: column wrap;
@@ -131,7 +174,8 @@ margin-left: 40px;
 }
 
 .flexIMG {
-  margin-left: -300px;
+  /*width: ;idth: 35%;*/
+  margin: 0 0 5px 0;
 }
 
 #workWrapper img {
